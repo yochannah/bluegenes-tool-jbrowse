@@ -12,20 +12,5 @@ module.exports = {
   },
   optimization: {
     minimize: true
-	},
-	module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      }
-    ]
-  },
-	externals: {
-		react: 'window.React',
-		'react-dom': 'window.ReactDOM'
-	}
+  }
 };
