@@ -25,11 +25,14 @@ function main(el, service, imEntity, state, config) {
     });
 
   */
-	el.innerHTML = `
-		<div class="rootContainer">
-			<h1>Your Data Viz Here</h1>
-		</div>
-	`;
+  console.log(imEntity);
+	el.innerHTML = '<iframe src="'
+    + config.jbrowseUrl
+    + encodeURIComponent(service.root)
+    + encodeURIComponent("/jbrowse/config/9606&loc=3:12272855..12449100&tracks=HumanMine-9606-Gene")
+//  ../../index.html?data=sample_data/json/volvox&tracklist=0&nav=0&overview=0&tracks=DNA%2CExampleFeatures%2CNameTest%2CMotifs%2CAlignments%2CGenes%2CReadingFrame%2CCDS%2CTranscript%2CClones%2CEST
+//https://jbrowse.intermine.org/?data=https%3A%2F%2Fwww.humanmine.org%2Fhumanmine%2Fservice%2Fjbrowse%2Fconfig%2F9606&loc=3%3A12272855..12449100&tracks=HumanMine-9606-Gene&highlight=
+   + '" width="600" height="300"> </iframe>';
 }
 
 module.exports = { main };

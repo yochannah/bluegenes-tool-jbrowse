@@ -17,6 +17,7 @@
   },
   "toolName" : {
     "human" :"JBrowse Genome Browser",
-    "cljs" :"bluegenesJBrowse"    
-  }
+    "cljs" :"bluegenesJBrowse"
+  },
+  "jbrowseUrl" : "https://jbrowse.intermine.org/?data="
 }
